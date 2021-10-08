@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Georgia;
+}
+
+#logo {
+    width: 7%;
+    height: 7%;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+header {
+    background-color: indigo;
+    color: white;
+    padding-bottom: 15px;
+}
+
+#title {
+    display: inline;
+    font-size: 40px;
+}
+
+#links li {
+    display: inline;
+    padding: 15px;
+    border-right: 2px solid indigo;
+}
+
+#links li:hover {
+    background-color: rgb(183, 241, 229);
+}
+
+#links a {
+    color: indigo;
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(10, 175, 175);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+section {
+    padding: 20px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+}
+
+#faculty img {
+    height: 150px;
+    width:150px;
+    border-radius: 10px;
+}
+
+caption {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#faculty th {
+    background-color: indigo;
+    color: white;
+}
+
+#faculty img:hover {
+    transform: scale(1.1);
+}
+
+#staff th {
+    background-color: indigo;
+    color: white;
+}
+
+dd {
+    padding-bottom: 30px;
+}
