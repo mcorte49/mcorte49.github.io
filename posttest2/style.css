@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: ghostwhite;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .1rem;
+}
+
+#logo {
+    width: 15%;
+    height: 15%;
+    margin: 0;
+    border-radius: 70%;
+    padding: 3px;
+}
+
+header {
+    background-color: rgb(247, 120, 150);
+    color: black;
+    height: 20%;
+    padding: 20px;
+}
+
+#title {
+    display:inline;
+    font-size: 85px;
+    padding: 15px;
+    vertical-align: 80px;
+    font-family: 'Anton', sans-serif;
+}
+
+#links li {
+    display: inline;
+    border-right: 2px solid black;
+    padding: 15px;
+}
+
+nav{
+   background-color:rgb(244, 138, 166);
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+}
+
+#links li:hover {
+    background-color: rgb(245, 165, 193);
+    border-radius:40px;
+}
+
+section {
+    padding: 20px;
+    border: 15px;
+}
+
+footer {
+    margin: 0;
+    padding-bottom: 30px;
+    background-color:rgb(247, 120, 150);
+    color: black;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+table, td, th { 
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table img {
+    width: 300px;
+    height: 300px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+table img:hover {
+    transform: scale(1.1) ;
+}
+
+table th {
+    background-color: rgb(161, 203, 218);
+    color: black;
+}
