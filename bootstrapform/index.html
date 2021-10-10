@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Form Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+         
+    </head>
+
+    <body>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address: <span id="email-error"></span></label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                </div>
+
+                <div clas="form-group">
+                    <label for="confirm">Confirm Email Address: <span id="confirm-error"></span></label>
+                    <input type="confirm" class="form-control" placeholder="Enter email" id="confirm" name="confirm">
+                </div><br>
+
+                <input type="button" value="Confirm Email" onclick="checkEmail()">
+            </form>
+
+            <!--PIZZA FORM-->
+            <h1>Pizza Order Form</h1>
+            <form>
+                <div class="form-check">
+                    <label class="form-check-label" for="small">
+                        <input type="radio" class="form-check-input" id="small" name="size" value="Small" checked>Small
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="medium">
+                        <input type="radio" class="form-check-input" id="medium" name="size" value="Medium" >Medium
+                    </label>
+                </div>
+                
+                <div class="form-check">
+                    <label class="form-check-label" for="large">
+                        <input type="radio" class="form-check-input" id="large" name="size" value="Large" >Large
+                    </label>
+                </div>
+
+                <hr>
+
+                <!--TOPPINGS-->
+                <div class="form-check">
+                    <label class="form-check-label" for="peperoni">
+                        <input type="checkbox" class="form-check-input" id="peperoni" name="peperoni" value="Peperoni" >Peperoni
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="sausage">
+                        <input type="checkbox" class="form-check-input" id="sausage" name="sausage" value="Sausage" >Sausage
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="mushrooms">
+                        <input type="checkbox" class="form-check-input" id="mushrooms" name="mushrooms" value="Mushrooms" >Mushrooms
+                    </label>
+                </div>
+
+                <hr>
+                
+                <!--SUBMIT FORM BUTTOM-->
+                <input type="button" value="Submit Order" onclick="pizzaOrder()">
+                <hr>
+                <div id="output"></div>
+
+            </form>
+
+            <img id="cheese" src="images/cheese.png">
+            <img id="peperoni-toppings" src="images/pepperoni.png">
+            <img id="sausage-toppings" src="images/sausage.png">
+            <img id="mushrooms-toppings" src="images/mushrooms.png">
+
+        </div>
+
+        <script>
+            document.getElementById("peperoni").onclick =  function() {
+                if(this.checked == true)
+                {
+                    document.getElementById("peperoni-toppings").style = "display:block";
+                }
+                else
+                {
+                    document.getElementById("peperoni-toppings").style = "display:none";
+                }
+            }
+
+            document.getElementById("sausage").onclick =  function() {
+                if(this.checked == true)
+                {
+                    document.getElementById("sausage-toppings").style = "display:block";
+                }
+                else
+                {
+                    document.getElementById("sausage-toppings").style = "display:none";
+                }
+            }
+
+            document.getElementById("mushrooms").onclick =  function() {
+                if(this.checked == true)
+                {
+                    document.getElementById("mushrooms-toppings").style = "display:block";
+                }
+                else
+                {
+                    document.getElementById("mushrooms-toppings").style = "display:none";
+                }
+            }
+        </script>
+    </body>
+
+</html>

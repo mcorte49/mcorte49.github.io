@@ -1,0 +1,27 @@
+span {
+    color:red;
+    font-weight: bold;
+}
+
+#cheese {
+    position: absolute; /*in order to use z-indez to overlap images you have to set position*/
+    z-index: o;
+}
+
+#peperoni-toppings {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#sausage-toppings {
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+#mushrooms-toppings {
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
