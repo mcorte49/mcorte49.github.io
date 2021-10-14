@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mae's Crochet Shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    </head>
+    <body onload="updateCheckout()">
+
+
+        <div class="jumbotron text-center banner">
+            <h1>Mae's Crochet</h1>
+            <p>The best handmade crochet shop in the valley!</p>
+        </div>
+
+<!--navbar--> 
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow navbar-fixed-top">
+            <a id="cart-link" class="navbar-brand" href ="cart.html">Checkout (0)</a>
+            <!--toggle/collapse button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--links  -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<!--carousel-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/stock1.jpeg" alt="Online Tutorials" width="1100" height="300">
+                <div class="carousel-caption">
+                    <h3>Online Tutorials</h3>
+                    <p>Learn how to crochet by subscribing to our newsletter!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/stock2.jpeg" alt="Fall Sale" width="1100" height="300">
+                <div class="carousel-caption">
+                    <h3>Fall Sale!</h3>
+                    <p>Apply discount code: FALL2021 at checkout to save money.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/stock3.jpeg" alt="Quality Products" width="1100" height="300">
+                <div class="carousel-caption">
+                    <h3>Quality Products</h3>
+                    <p>Best quality guaranteed or your money back.</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+        </div>  
+       
+ <!--BODY OF DOCUMENT-->
+
+        <div class="container text-center">
+              <div class="row">
+                  <div class="col">
+                      <img src="images/img1.jpeg" class="img-thumbnail">
+                      <h3 style="color: black;">Crochet Pumpkin Coasters</h3>
+                      <p>$ 9.99 plus tax</p>
+                      <input class="btn btn-primary" type="button" value="Add to Cart" onclick="add(0)">
+                  </div>
+
+                  <div class="col">
+                    <img src="images/img2.jpeg" class="img-thumbnail">
+                    <h3 style="color: black;">Crochet Frog with Strawberry Hat</h3>
+                    <p>$ 39.99 plus tax</p>
+                    <input class="btn btn-primary" type="button" value="Add to Cart" onclick="add(1)">
+                </div>
+
+                <div class="col">
+                    <img src="images/img3.jpeg" class="img-thumbnail">
+                    <h3 style="color: black;">Crochet Tote Bag</h3>
+                    <p>$ 29.99 plus tax</p>
+                    <input class="btn btn-primary" type="button" value="Add to Cart" onclick="add(2)">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col">
+                    <img src="images/img4.jpeg" class="img-thumbnail">
+                    <h3 style="color: black;">Crochet Bucket Hat</h3>
+                    <p>$ 19.99 plus tax</p>
+                    <input class="btn btn-primary" type="button" value="Add to Cart" onclick="add(3)">
+                </div>
+
+                <div class="col">
+                  <img src="images/img5.jpeg" class="img-thumbnail">
+                  <h3 style="color: black;">Crochet Sunflower Top</h3>
+                  <p>$ 49.99 plus tax</p>
+                  <input class="btn btn-primary" type="button" value="Add to Cart" onclick="add(4)">
+              </div>
+
+              <div class="col">
+                  <img src="images/img6.jpeg" class="img-thumbnail">
+                  <h3 style="color: black;">Crochet Multicolored Flower Blanket</h3>
+                  <p>$ 99.99 plus tax</p>
+                  <input class="btn btn-primary" type="button" value="Add to Cart" onclick="add(5)">
+              </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center footer">
+            <h1>Call for Ordering</h1>
+            <p>956-777-6666</p>            
+        </div>
+
+
+
+    </body>
+
+</html>

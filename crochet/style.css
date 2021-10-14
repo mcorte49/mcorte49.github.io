@@ -1,0 +1,53 @@
+.banner {
+    color: black;
+    text-shadow: 2px 2px 4px rgb(70, 46, 19);
+    background-image: url(images/texture.jpeg);
+    margin: 0px;
+}
+
+#demo {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(235, 215, 199);
+    background-image: url(images/texture2.png);
+}
+
+.carousel-img {
+    margin: 0px;
+}
+.carousel-caption {
+    text-shadow: 2px 2px 4px black;
+}
+
+.col img {
+    width: 200px;
+    height:200px;
+}
+
+.col {
+    margin: 20px;
+}
+
+.footer {
+    background-color: rgb(197, 162, 133);
+    color: white;
+    margin: 0px;
+}
+
+table, td, th {
+    color: black;
+}
+
+h3 {
+    color: white;
+}
+
+#total {
+    color: black;
+}
+
+body {
+    font-family: 'Slabo 27px', serif;
+}
